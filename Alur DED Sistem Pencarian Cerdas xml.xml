@@ -1,0 +1,65 @@
+<mxfile host="app.diagrams.net" version="26.2.14">
+  <diagram name="Sistem Pencarian Cerdas" id="1">
+    <mxGraphModel dx="1220" dy="720" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <mxCell id="title" value="&lt;b&gt;DED Alur Sistem Pencarian Cerdas Produk&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="250" y="30" width="350" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="start" value="Start" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="380" y="80" width="80" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="aksesHalaman" value="Pengguna Akses Halaman Pencarian" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="300" y="140" width="240" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="inputKataKunci" value="Input Kata Kunci / Produk" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="300" y="210" width="240" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="mesinPencari" value="Proses Query oleh Mesin Pencarian Cerdas" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="300" y="280" width="240" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="hasilAwal" value="Tampilkan Hasil Awal Berdasarkan Relevansi" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="300" y="350" width="240" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="filterKategori" value="Pengguna Terapkan Filter dan Kategori" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="300" y="420" width="240" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="refineHasil" value="Refine Hasil Berdasarkan Filter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="300" y="500" width="240" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="klikProduk" value="Pengguna Klik Produk yang Diinginkan" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="300" y="570" width="240" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="checkout" value="Arahkan ke Halaman Detail &amp; Checkout" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="300" y="640" width="240" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="end" value="End" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="380" y="710" width="80" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Edges -->
+        <mxCell style="endArrow=classic;html=1;" edge="1" parent="1" source="start" target="aksesHalaman"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell style="endArrow=classic;html=1;" edge="1" parent="1" source="aksesHalaman" target="inputKataKunci"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell style="endArrow=classic;html=1;" edge="1" parent="1" source="inputKataKunci" target="mesinPencari"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell style="endArrow=classic;html=1;" edge="1" parent="1" source="mesinPencari" target="hasilAwal"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell style="endArrow=classic;html=1;" edge="1" parent="1" source="hasilAwal" target="filterKategori"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell style="endArrow=classic;html=1;" edge="1" parent="1" source="filterKategori" target="refineHasil"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell style="endArrow=classic;html=1;" edge="1" parent="1" source="refineHasil" target="klikProduk"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell style="endArrow=classic;html=1;" edge="1" parent="1" source="klikProduk" target="checkout"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell style="endArrow=classic;html=1;" edge="1" parent="1" source="checkout" target="end"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
